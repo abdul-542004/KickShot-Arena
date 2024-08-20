@@ -272,9 +272,12 @@ int main()
     // Main game loop
     while (!WindowShouldClose())
     {
+
+        UpdateMusicStream(backgroundMusic); // Update the music stream
+        
         if (currentScreen == TITLE_SCREEN)
         {
-            UpdateMusicStream(backgroundMusic); // Update the music stream
+            
             
             if (IsKeyPressed(KEY_SPACE))
             {
@@ -295,7 +298,6 @@ int main()
         }
         else if (currentScreen == SELECTION_SCREEN)
         {
-            UpdateMusicStream(backgroundMusic); // Update the music stream
             BeginDrawing();
             ClearBackground(LIME); // selection background
 
@@ -446,7 +448,6 @@ int main()
         else if (currentScreen == GAME)
         {
             
-            UpdateMusicStream(backgroundMusic); // Update the music stream
             
             // Update section of Game Loop starts here
 
