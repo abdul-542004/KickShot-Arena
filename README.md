@@ -13,8 +13,8 @@
 ## Game Architecture
 The architecture includes three main classes, each implemented in separate header (hpp) and implementation (cpp) files:
   1. **GameObject Class (Base, Abstract)**: Provides a common interface and shared attributes for all game objects, with virtual functions for extension by derived classes.
-  2. **Ball Class (Derived)**: Inherits from GameObject and implements specific attributes and behaviors for the ball, such as movement and collision detection.
-  3. **Palet Class (Derived)**: Inherits from GameObject and encapsulates specific attributes and behaviors for the pallet, overriding virtual functions to provide unique implementations.
+  2. **Ball Class (Derived)**: Inherits from GameObject and implements specific attributes and behaviours for the ball, such as movement and collision detection.
+  3. **Palet Class (Derived)**: Inherits from GameObject and encapsulates specific attributes and behaviours for the pallet, overriding virtual functions to provide unique implementations.
 
 ## How to Play
 
@@ -36,7 +36,7 @@ The source code includes the following key components:
 ## Contributions
 
 - **Muhammad Abdullah Khan**: Designed and implemented collision logic and graphics, utilizing OOP concepts.
-- **Furqanullah**: Developed the power bar, directional arrow, title window, and handled texture loading.
+- **Furqanullah**: Developed the power bar, directional arrow, and title window, and handled texture loading.
 - **Muhammad Rafay**: Created the selection window, graphical interface, and integrated sound effects.
 
 ## Future Expansions
@@ -47,7 +47,7 @@ The source code includes the following key components:
 
 1. Clone the repository.
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/abdul-542004/KickShot-Arena.git
 2. Compile the project using your preferred C++ compiler.
 3. Run the executable to start playing Kickshot Arena.
 
