@@ -214,6 +214,7 @@ int main()
     Sound winningSound = LoadSound("Sounds/Winning.mp3");
 
     PlayMusicStream(backgroundMusic);
+    
 
     // loading textures
     Texture2D bgLogo = LoadTexture("Graphics/logo.png");
@@ -273,6 +274,8 @@ int main()
     {
         if (currentScreen == TITLE_SCREEN)
         {
+            UpdateMusicStream(backgroundMusic); // Update the music stream
+            
             if (IsKeyPressed(KEY_SPACE))
             {
                 currentScreen = SELECTION_SCREEN;
@@ -292,6 +295,7 @@ int main()
         }
         else if (currentScreen == SELECTION_SCREEN)
         {
+            UpdateMusicStream(backgroundMusic); // Update the music stream
             BeginDrawing();
             ClearBackground(LIME); // selection background
 
@@ -441,8 +445,9 @@ int main()
 
         else if (currentScreen == GAME)
         {
+            
             UpdateMusicStream(backgroundMusic); // Update the music stream
-
+            
             // Update section of Game Loop starts here
 
             Vector2 mousePosition = GetMousePosition();
